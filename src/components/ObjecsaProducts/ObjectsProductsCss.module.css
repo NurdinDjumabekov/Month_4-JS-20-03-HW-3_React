@@ -1,0 +1,8 @@
+.parent {
+  max-width: 1400px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
+}

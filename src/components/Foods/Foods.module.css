@@ -1,0 +1,50 @@
+.parent_foods {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 30px 8px 30px 4px rgb(197, 198, 177);
+  margin-left: 50px;
+  background: -webkit-linear-gradient(top, #8f9551, #ffcfcf);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.food_imgs > img {
+  width: 250px;
+  height: 250px;
+}
+
+.food_info {
+  width: 250px;
+  text-align: center;
+}
+.food_info p {
+  margin: 30px 0;
+  font-size: 45px;
+}
+
+.food_info span {
+  font-size: 45px;
+  font-family: "Caveat", cursive;
+  /* font-family: 'Dancing Script', cursive; */
+  /* font-family: 'Libre Baskerville', serif; */
+}
+.food_info > button {
+  font-size: 18px;
+  font-family: "Dancing Script", cursive;
+  transition: 0.6s;
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.food_info button:hover {
+  scale: 1.1;
+}
+
+.food_info > .massa {
+  font-size: 18px;
+  display: block;
+}
