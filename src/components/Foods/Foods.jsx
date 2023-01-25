@@ -1,9 +1,7 @@
 import FoodCss from "./Foods.module.css";
 
-function Foods(product,{ countBasket, setCountBasket}) {
-  let i = countBasket;
+function Foods(product) {
   const addBacket = (event) => {
-    
     console.log(event.target);
     console.log("Код товара " + product.food.id);
     console.log(product.food.name);
@@ -12,7 +10,6 @@ function Foods(product,{ countBasket, setCountBasket}) {
     // console.log(product.food.url);
     ////////////////////////////////////////////////////
     // i++;
-    setCountBasket(++i)
 
     alert(`
       Вы заказали : ${product.food.name}

@@ -5,14 +5,15 @@ import { useState } from "react";
 // import Backet from "./components/Backet/Backet";
 
 function App() {
-  const [countBasket, setCountBasket] = useState(0)
+  // const [countBasket, setCountBasket] = useState(0)
   return (
     <div className="App">
-      <Menu count={count} />
-      <ObjectsProducts count = {countBasket} setCount={setCountBasket} />
+      <Menu />
+      <ObjectsProducts />
       {/* <Backet /> */}
     </div>
   );
 }
 
 export default App;
+

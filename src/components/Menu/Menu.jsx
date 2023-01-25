@@ -1,6 +1,6 @@
 import MenuCss from "./Menu.module.css";
 
-function Menu({count}) {
+function Menu() {
   const backet = document.querySelector(".BacketText");
   return (
     <>
@@ -23,11 +23,10 @@ function Menu({count}) {
             alt="Корзина"
           />
         </div>
-        <span className={MenuCss.BacketText}>{count}</span>
+        <span className={MenuCss.BacketText}></span>
       </div>
     </>
   );
 }
 
 export default Menu;
-
