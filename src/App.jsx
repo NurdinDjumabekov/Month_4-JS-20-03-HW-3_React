@@ -1,13 +1,16 @@
 import "./App.css";
-import Foods from "./components/Foods/Foods";
 import Menu from "./components/Menu/Menu";
 import ObjectsProducts from "./components/ObjecsaProducts/ObjectsProducts";
+import { useState } from "react";
+// import Backet from "./components/Backet/Backet";
 
 function App() {
+  const [countBasket, setCountBasket] = useState(0)
   return (
     <div className="App">
-      <Menu />
-      <ObjectsProducts />
+      <Menu count={count} />
+      <ObjectsProducts count = {countBasket} setCount={setCountBasket} />
+      {/* <Backet /> */}
     </div>
   );
 }

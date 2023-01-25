@@ -1,11 +1,10 @@
 import Foods from "../Foods/Foods";
 import ObjectsProductsCss from "./ObjectsProductsCss.module.css";
 //фотки
-import fudziama from "./ObjectsProductsImgs/fudziama.jpg";
 import HotIzumrud from "./ObjectsProductsImgs/HotIzumrud.png";
 import Niagara from "./ObjectsProductsImgs/Niagara.png";
 
-function ObjectsProducts() {
+function ObjectsProducts({countBasket, setCountBasket}) {
   const foodsInfo = [
     {
       id: 1,
@@ -65,11 +64,15 @@ function ObjectsProducts() {
       url: HotIzumrud,
     },
   ];
+  // const newObjN = Object.assign({}, foodBacket);
+  // console.log(newObjN);
+
   return (
     <div className={ObjectsProductsCss.parent}>
-      {foodsInfo.map((item) => (
-        <Foods key={item.id} food={item} />
-      ))}
+      {foodsInfo
+        .map((item) => (
+          <Foods count={countBasket} setCount={setCountBasket} key={item.id} food={item} />
+        ))}
     </div>
   );
 }
