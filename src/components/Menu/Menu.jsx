@@ -1,7 +1,7 @@
 import MenuCss from "./Menu.module.css";
 
-function Menu() {
-  const backet = document.querySelector(".BacketText");
+function Menu(props) {
+  // const backet = document.querySelector(".BacketText");
   return (
     <>
       <div className={MenuCss.parent_nav}>
