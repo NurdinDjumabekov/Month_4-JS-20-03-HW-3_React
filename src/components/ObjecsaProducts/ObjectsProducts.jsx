@@ -1,16 +1,15 @@
 import { useState } from "react";
-import Foods from "../Foods/Foods";
+// import Foods from "../Foods/Foods";
 import ObjectsProductsCss from "./ObjectsProductsCss.module.css";
 //фотки
 import HotIzumrud from "./ObjectsProductsImgs/HotIzumrud.png";
 import Niagara from "./ObjectsProductsImgs/Niagara.png";
 
-function ObjectsProducts() {
+function ObjectsProducts({ value }) {
   const [count, Setcount] = useState(0);
   const increment = () => {
     Setcount(count + 1);
   };
-
   /* //////////////////////// */
 
   const foodsInfo = [
@@ -88,9 +87,9 @@ function ObjectsProducts() {
   ];
   return (
     <>
+      {/* <h1>{value}</h1> */}
       <div className={ObjectsProductsCss.parent}>
         {foodsInfo.map((item) => (
-          // <Foods key={item.id} food={item} />
           <div>
             <div className={ObjectsProductsCss.parent_foods}>
               <div className={ObjectsProductsCss.food_imgs}>
@@ -116,6 +115,13 @@ function ObjectsProducts() {
             </div>
           </div>
         ))}
+        {/* {foodsInfo.filter((i) => {
+          if (i.name === value) {
+            <div className={ObjectsProductsCss.parent_foods}></div>;
+          } else {
+            <div className={ObjectsProductsCss.nnn}></div>;
+          }
+        })} */}
       </div>
       {/* //////////////////////// */}
       <div className={ObjectsProductsCss.ParentBacket}>

@@ -1,6 +1,6 @@
 import MenuCss from "./Menu.module.css";
 
-function Menu() {
+function Menu({ onSearch }) {
   return (
     <>
       <div className={MenuCss.parent_nav}>
@@ -9,12 +9,11 @@ function Menu() {
             <a href="">Wasabi</a>
           </span>
           <div className={MenuCss.nav_search}>
-            <input type="text" placeholder="Поиск" />
+            <input type="text" placeholder="Поиск" onChange={onSearch} />
             <button>Поиск</button>
           </div>
         </div>
       </div>
-      
     </>
   );
 }

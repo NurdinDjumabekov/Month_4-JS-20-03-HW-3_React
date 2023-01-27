@@ -76,8 +76,9 @@
   display: block;
 }
 
-/* .btn_backet {
-  background-color: transparent;
-  border-radius: 50%;
-  width: 250px;
-} */
+.noView {
+  display: none;
+}
+.nnn {
+  display: none;
+}

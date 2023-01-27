@@ -1,4 +1,4 @@
-.parent_foods {
+/* .parent_foods {
   width: 500px;
   height: 350px;
   display: flex;
@@ -28,8 +28,7 @@
 .food_info span {
   font-size: 45px;
   font-family: "Caveat", cursive;
-  /* font-family: 'Dancing Script', cursive; */
-  /* font-family: 'Libre Baskerville', serif; */
+
 }
 .food_info > button {
   font-size: 18px;
@@ -47,4 +46,4 @@
 .food_info > .massa {
   font-size: 18px;
   display: block;
-}
+} */
