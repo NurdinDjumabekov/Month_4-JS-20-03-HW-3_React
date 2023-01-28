@@ -1,0 +1,47 @@
+.iconParent {
+  width: 600px;
+  height: 600px;
+  background-color: gray;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: fixed;
+  top: 100px;
+  left: 34%;
+  border-radius: 10px;
+}
+.icon_child {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+}
+.inputName {
+  width: 500px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.if_site {
+  width: 350px;
+  height: 30px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: black;
+  color: antiquewhite;
+}
+.checkBox {
+  width: 20px;
+  height: 20px;
+}

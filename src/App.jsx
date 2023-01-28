@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Icon from "./components/Icon/Icon";
 import Menu from "./components/Menu/Menu";
 import ObjectsProducts from "./components/ObjecsaProducts/ObjectsProducts";
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Menu onSearch={inputsearch} />
       <ObjectsProducts value={value} />
+      <Icon />
     </div>
   );
 }
